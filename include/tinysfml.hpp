@@ -127,12 +127,19 @@ void clearTransform();
 void resetTransform();
 
 /**
- * @brief Translate the current state.
+ * @brief Translate the current transform.
  * 
  * @param x The x offset.
  * @param y The y offset.
  */
 void translate(float x, float y);
+
+/**
+ * @brief Rotates the current transform.
+ * 
+ * @param deg The degrees to rotate it by.
+ */
+void rotate(float deg);
 
 /**
  * @brief Pushes the current transform, resetting it to default.

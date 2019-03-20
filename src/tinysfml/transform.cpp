@@ -12,9 +12,12 @@ void tiny::clearTransform()
 
 void tiny::translate(float x, float y)
 {
-	sf::Transform translation;
-	translation.translate(x, y);
-	Context::transform().transform *= translation;
+	Context::transform().transform.translate(x, y);
+}
+
+void tiny::rotate(float deg)
+{
+	Context::transform().transform.rotate(deg);
 }
 
 void tiny::push()
