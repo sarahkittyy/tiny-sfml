@@ -21,6 +21,7 @@ public:
 	static sf::RenderStates current_transform;
 	static sf::RenderStates& transform();
 	static void transform_reset();
+	static void transform_clear();
 	static void transform_push();
 	static void transform_pop();
 

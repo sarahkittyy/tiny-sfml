@@ -14,6 +14,11 @@ sf::RenderStates& Context::transform()
 
 void Context::transform_reset()
 {
+	current_transform = sf::RenderStates::Default;
+}
+
+void Context::transform_clear()
+{
 	while (!transform_stack.empty())
 	{
 		transform_stack.pop();

@@ -5,6 +5,11 @@ void tiny::resetTransform()
 	Context::transform_reset();
 }
 
+void tiny::clearTransform()
+{
+	Context::transform_clear();
+}
+
 void tiny::translate(float x, float y)
 {
 	sf::Transform translation;
