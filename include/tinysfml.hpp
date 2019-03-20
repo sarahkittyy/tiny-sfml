@@ -113,19 +113,38 @@ void strokeWidth(float width);
 void rect(float x, float y, float w, float h);
 
 /////////////////TRANSFORMS/////////////
-void resetTransform();
-
-void translate(float x, float y);
-
-void push();
-
-void pop();
-
-////////////////MAIN()/////////////////
 
 /**
- * @brief Ignore this.
+ * @brief Clears all transforms, including saved onces.
+ * 
  */
-int run();
+void clearTransform();
+
+/**
+ * @brief Reset the current transform to default.
+ * 
+ */
+void resetTransform();
+
+/**
+ * @brief Translate the current state.
+ * 
+ * @param x The x offset.
+ * @param y The y offset.
+ */
+void translate(float x, float y);
+
+/**
+ * @brief Pushes the current transform, resetting it to default.
+ * Can be retreived with pop().
+ */
+void push();
+
+/**
+ * @brief Pops the last push()'d transform, appending it to the current transform.
+ * 
+ * @remarks Call resetTransform() beforehand to just grab a clean copy of the previously push()'d transform.
+ */
+void pop();
 
 };
