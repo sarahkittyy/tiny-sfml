@@ -19,10 +19,11 @@ int tiny::run()
 				window.close();
 				break;
 			}
-			draw();
-
-			window.display();
 		}
+
+		draw();
+
+		window.display();
 	}
 
 	return 0;

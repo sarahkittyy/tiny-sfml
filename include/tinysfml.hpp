@@ -112,6 +112,15 @@ void strokeWidth(float width);
  */
 void rect(float x, float y, float w, float h);
 
+/////////////////TRANSFORMS/////////////
+void resetTransform();
+
+void translate(float x, float y);
+
+void push();
+
+void pop();
+
 ////////////////MAIN()/////////////////
 
 /**

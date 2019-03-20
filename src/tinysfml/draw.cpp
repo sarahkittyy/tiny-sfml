@@ -32,5 +32,5 @@ void tiny::rect(float x, float y, float w, float h)
 	rect.setFillColor(Context::color_fill);
 	rect.setOutlineColor(Context::color_stroke);
 	rect.setOutlineThickness(Context::stroke_width);
-	Context::window.draw(rect);
+	Context::draw(rect);
 }
