@@ -7,3 +7,9 @@ tiny-sfml is a tiny wrapper library over SFML for any quick graphical projects y
 * SFML 2.5
 
 ## Building
+
+```
+cd build
+cmake ..
+make
+```
