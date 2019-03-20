@@ -142,6 +142,24 @@ void translate(float x, float y);
 void rotate(float deg);
 
 /**
+ * @brief Scales the current transform.
+ * 
+ * @param x The x scaling factor.
+ * @param y The y scaling factor.
+ */
+void scale(float x, float y);
+
+/**
+ * @brief Scales the current transform.
+ * 
+ * @param x The x scaling factor.
+ * @param y The y scaling factor.
+ * @param centerx The x center position.
+ * @param centery The y center position.
+ */
+void scale(float x, float y, float centerx, float centery);
+
+/**
  * @brief Pushes the current transform, resetting it to default.
  * Can be retreived with pop().
  */
