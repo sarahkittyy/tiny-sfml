@@ -61,7 +61,7 @@ void background(unsigned r, unsigned g, unsigned b);
  */
 void background(unsigned v);
 
-////////////////DRAWING////////////////
+////////////////DRAW-SETTINGS////////////////
 
 /**
  * @brief Set the fill color for drawn objects.
@@ -102,6 +102,8 @@ void stroke(unsigned v);
  */
 void strokeWidth(float width);
 
+//////////////////////DRAWING/////////////
+
 /**
  * @brief Draw a rectangle to the screen.
  * 
@@ -111,6 +113,8 @@ void strokeWidth(float width);
  * @param h The height.
  */
 void rect(float x, float y, float w, float h);
+
+void circle(float x, float y, float r);
 
 /////////////////TRANSFORMS/////////////
 

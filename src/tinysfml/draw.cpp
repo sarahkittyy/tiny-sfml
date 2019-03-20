@@ -34,3 +34,13 @@ void tiny::rect(float x, float y, float w, float h)
 	rect.setOutlineThickness(Context::stroke_width);
 	Context::draw(rect);
 }
+
+void tiny::circle(float x, float y, float r)
+{
+	sf::CircleShape circle(r);
+	circle.setPosition(x, y);
+	circle.setOutlineColor(Context::color_stroke);
+	circle.setOutlineThickness(Context::stroke_width);
+	circle.setFillColor(Context::color_fill);
+	Context::draw(circle);
+}
